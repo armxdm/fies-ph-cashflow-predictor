@@ -31,7 +31,7 @@ urban_mapping = {
         2: 'Rural'
     }
 
-st.markdown("""<h2 style="text-align:center;">Filipino Family Income and Expenditures</h2>""", unsafe_allow_html = True)
+st.markdown("""<h2 style="text-align:center;">Filipino Family Income and Expenditure</h2>""", unsafe_allow_html = True)
 heading2 = """
 <div style="background:#6ba315; padding:3px">
 <h3 style="color:white;text-align:center;">C&nbsp;&nbsp;A&nbsp;&nbsp;S&nbsp;&nbsp;H&nbsp;&nbsp;F&nbsp;&nbsp;L&nbsp;&nbsp;O&nbsp;&nbsp;W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P&nbsp;&nbsp;R&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp;I&nbsp;&nbsp;C&nbsp;&nbsp;T&nbsp;&nbsp;O&nbsp;&nbsp;R</h3>
@@ -71,7 +71,7 @@ pcinc = col2.number_input('📈 Per Capita Income')
 st.divider()
 
 #Expenditure
-st.subheader("Expenditures")
+st.subheader("Expenditure")
 col1, col2 = st.columns(2)
 losses = col1.number_input('📉 Losses from EA')
 bread = col1.number_input('🍞 Bread and Cereals')
