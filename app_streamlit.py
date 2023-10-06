@@ -1,7 +1,6 @@
 # General Libraries
 import pickle
 import pandas as pd
-import numpy as np
 
 # Model deployment
 import streamlit as st
