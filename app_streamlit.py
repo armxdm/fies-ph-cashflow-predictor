@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 
 # Model deployment
-from flask import Flask
 import streamlit as st
 
 model = pickle.load(open('ml_model.pkl', 'rb'))
@@ -62,9 +61,9 @@ cashDomestic = st.number_input('💰 Cash Receipts, Support, etc. from Domestic 
 rentalsRec = st.number_input('🏘️ Rentals Received from Non-Agri Lands, etc.')
 interest = st.number_input('💳 Interest')
 pension = st.number_input('👴 Pension and Retirement Benefits')
-dividends = st.number_input('Dividends from Investment')
-otherSource = st.number_input('Other Sources of Income NEC')
-netReceipt = st.number_input('Family Sustenance Activities')
+dividends = st.number_input('🪙 Dividends from Investment')
+otherSource = st.number_input('📈 Other Sources of Income NEC')
+netReceipt = st.number_input('🧺 Family Sustenance Activities')
 regft = st.number_input('🎁 Total Received as Gifts')
 eainc = st.number_input('🏬 Total Income from Entrepreneurial Acitivites')
 otherRec = st.number_input('💲 Total Other Receipts')
@@ -107,7 +106,7 @@ communication = st.number_input('📱 Communication')
 recreation = st.number_input('🎮 Recreation and Culture')
 education = st.number_input('🎓 Education')
 insurance = st.number_input('💲 Insurance')
-misc = st.number_input('Miscellaneous Goods and Services')
+misc = st.number_input('🍿 Miscellaneous Goods and Services')
 durable = st.number_input('🛋️ Durable Furniture and Equipment')
 occasion = st.number_input('🎊 Special Family Occasion')
 otherExpenditure = st.number_input('📉 Other Expenditure (inc. Value Consumed, Losses)')
