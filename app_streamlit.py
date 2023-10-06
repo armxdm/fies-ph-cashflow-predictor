@@ -1,6 +1,3 @@
-!pip install streamlit
-!pip install pickle
-
 # General Libraries
 import pickle
 import pandas as pd
