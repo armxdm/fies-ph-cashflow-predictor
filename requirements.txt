@@ -1,4 +1,4 @@
-Flask
 pickle
 pandas
 numpy
+streamlit
