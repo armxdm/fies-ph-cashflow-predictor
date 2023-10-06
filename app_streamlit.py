@@ -218,7 +218,8 @@ if st.button("Predict"):
     output = predict_cashflow(familySize, region, urbanRural, wages, netShare, cashAbroad, cashDomestic, rentalsRec, interest, pension, dividends, otherSource, netReceipt, regft, eainc, losses, bread, meat, fish, milk, oil, fruit, veg, sugar, foodNec, fruitVeg, coffee, tea, cocoa, water, softdrinks, othersNonAlcohol, alcohol, tobacco, otherVeg, servicesPrimaryGoods, alcoholProductionServices, foodOutside, cloth, furnishing, health, housingWater, actrent, imputedRent, transport, communication, recreation, education, insurance, misc, durable, occasion, otherExpenditure, otherDisbursement, foodAccomService, otherRec, pcinc)
 
     if output == 'Positive':
-        st.error('The family will have positive cashflow', icon="✅")
+        st.success('The family will have positive cashflow.', icon="📈")
     elif output == 'Negative':
-        st.success('The family will have negative cashflow', icon="❌")
+        st.error('The family will have negative cashflow.', icon="📉")
+
 
